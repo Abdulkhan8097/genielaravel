@@ -1,0 +1,14 @@
+@media (max-width:767px){
+  .arn_relationship_quality_score_calendar{display: none;}
+}
+.faq-question::before{
+  padding-right: 0px!important;
+  content:unset!important;
+}
+.faq-answer::before{
+  padding-right: 0px!important;
+  content:unset!important;
+}
+a.active-anchor{
+  opacity: 1;
+}

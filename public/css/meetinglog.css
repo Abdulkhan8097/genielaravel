@@ -1,0 +1,416 @@
+/* Profile Summary css */
+
+.font-bd-24{
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.profile-sm-head{
+    border: 1px solid #e8ecf6;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #F5F6F8;
+    display: flex;
+}
+
+.profile-sm-head .font-bd-24
+ {
+    margin: 10px;
+    margin-left: 20px;
+ }
+ .pro-sm-child{
+    display: flex; text-align: center; margin: 10px 21px;
+ }
+.pro-sm-child-1{
+
+    margin: 10px 8px;
+}
+.border-right{
+    border-right: 1px solid #D4D4D4;
+}
+
+.border-right .font-bd-24 {
+    margin-right: 30px;
+}
+
+.font-14{
+    font-size: 14px;
+}
+.font-bd-18{
+    font-size: 18px;
+    font-weight: 500;
+}
+.pro-sm-child-2{
+    border: 1px solid  #e8ecf6; border-radius: 0px 0px 10px 10px;
+}
+.pro-sm-child-2 ul {
+    display: flex;
+    padding: 0px;
+}
+.pro-sm-child-2 ul li{
+    list-style: none;
+    padding: 5px 30px;
+    flex-grow: 1;
+    width: 20%;
+    position: relative;
+}
+.pro-sm-child-2 ul li::after {
+    border-right: 1px solid #E8ECF6;
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    height: 52px;
+}
+.pro-sm-child-2 ul li:last-child:after  {
+    border-right: none;
+}
+
+
+.pro-sm-child-2 li label{
+    display: block;
+}
+
+@media (max-width:768px) {
+   .pro-sm-child {
+    margin: 0px 26px;
+   }
+    .profile-sm-head{
+        display: inherit;
+    }
+   .pro-sm-child-1 {
+    margin: 0px 0px 0px 97px;
+   }
+   .border-right{
+    border-right: none;
+   }
+    .pro-sm-child-2 ul li {
+        width: 50%;
+        padding: 5px 25px;
+    }
+    .pro-sm-child-2 ul {
+        display: flex !important;
+        padding: 0px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .pro-sm-child-2 ul li:nth-child(2):after,
+    .pro-sm-child-2 ul li:nth-child(4):after{
+        border-right: none;
+    }
+    .mb-1 {
+        margin-bottom: 4px;
+    }
+}
+
+
+/* Meeting Summary for March css */
+    .summary-child{
+    border:1px solid #E8ECF6;
+    border-radius: 10px;
+    padding: 20px 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+    position: relative;
+    margin: 9px 9px;
+    max-width: 32%;
+    }
+    .sm-icon{
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    }
+    .summary-dv{
+    display: flex;
+    margin: 0px -10px;
+    }
+    .sm-value{
+    font-size: 24px; 
+    font-weight: 700;
+    margin-bottom: 5px;
+    }
+    .sm-title{
+    font-size: 14px;
+    /* white-space: nowrap; */
+    }
+
+    /* make it green */
+    
+    .summary-dv .summary-child.active{
+        background-color: #11B462 !important;
+        color: white !important;
+    }
+    
+     /* make it red */
+    .summary-dv .summary-child.inactive{
+        background-color: red;
+        color: white;
+    }
+
+     .summary-child.active .sm-icon{
+        filter: brightness(0) invert(1);
+    } 
+   
+
+    @media (max-width: 768px) {
+        .summary-dv{
+            display: inherit;
+            /* max-width: auto; */
+        }
+        .summary-child{
+            max-width: inherit; 
+        }
+    }
+
+
+    /* summary / opportunity TABLE css */
+    #smm-opp {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #smm-opp td, #smm-opp th {
+        border: 1px solid #ddd;
+        padding: 14px;
+      }
+      #smm-opp th {
+        padding: 20px;
+        text-align: left;
+        background-color:#F5F6F8;
+        color: #434343
+        ;
+      }
+      .sum-opp-table #smm-opp tbody tr td:nth-child(2){
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+      }
+      .sum-opp-table #smm-opp tbody tr td:last-child{
+        text-align: center;
+      }
+      .sum-opp-table #smm-opp thead tr th:nth-child(2)  ,
+      .sum-opp-table #smm-opp thead tr th:nth-child(3) {
+        text-align: center;
+      }
+
+    .font-15{
+        font-size: 15px;
+    }
+    #smm-opp  tbody tr td:nth-child(3) a img{
+        filter: grayscale(1);
+    }
+    #smm-opp  tbody tr td:nth-child(3) a:hover img{
+        filter: inherit;
+    }
+
+/* Meeting Width analys  TABLE CSS */
+    .meeting-analys table {
+        border-collapse: collapse;
+    }
+
+    .meeting-analys  table, td, th {
+        border: 1px solid #E8ECF6;
+    }
+    
+    .meeting-analys table th {
+        padding: 17px 10px;
+        text-align: left;
+        background-color:#F5F6F8 ;
+        color: #434343;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .meeting-analys table td {
+        padding: 14px 10px;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+/* Project Category Wise TABLE CSS */
+      
+ .Project-Category table {
+    border-collapse: collapse;
+ }
+ .Project-Category table, td, th {
+    border: 1px solid #E8ECF6;
+}
+.Project-Category  table th {
+    padding: 17px 10px;
+    text-align: left;
+    background-color:#F5F6F8 ;
+    color: #434343;
+    font-size: 14px;
+    font-weight: 500;
+}
+.Project-Category table td {
+    padding: 14px 10px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Day wise meeting log TABLE CSS */
+
+.day-wise-mt-log table {
+    border-collapse: collapse;
+ }
+ .day-wise-mt-log table, td, th {
+    border: 1px solid #E8ECF6;
+}
+.day-wise-mt-log table th {
+    padding: 17px 10px;
+    text-align: left;
+    background-color:#F5F6F8 ;
+    color: #434343;
+    font-size: 14px;
+    font-weight: 500;
+}
+.day-wise-mt-log table td {
+    padding: 14px 10px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* input fields css */
+.input-area {
+    position: relative;
+    }
+    .form-input {
+    width: 100%;
+    border: solid 1px #DADCE0;
+    transition: 0.5s all;
+    font-size: 16px;
+    padding: 0 10px;
+    background: #fff;
+    border-radius: 5px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 16px;
+    }
+    .form-input+.input-label.active {
+    top: -9px;
+    font-size: 13px;
+    z-index: 2;
+    width: auto;
+    font-weight: var(--font-weight-700);
+    }
+    .input-label.active {
+    color: var(--gray-dark);
+    }
+
+    .input-label {
+    display: block;
+    }
+    .input-label {
+    font-size: 12px;
+    margin: 0;
+    position: absolute;
+    background: #fff;
+    width: 98%;
+    top: 11px;
+    transition: 0.3s all;
+    height: 18px;
+    font-size: var(--font-16);
+    left: 7px;
+    padding: 0 4px;
+    white-space: nowrap;
+    }
+    /* .btn{
+        padding: 11px 15px;
+    } */
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        /* padding: 0.375rem 0.75rem; */
+        padding: 0.575rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      .btn-outline-secondary {
+        color: #6c757d;
+        background-color: transparent;
+        background-image: none;
+        border-color: #D8D5D5;
+      }
+      .btn-outline-secondary:hover {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+      .btn-outline-secondary.focus,
+      .btn-outline-secondary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+      }
+      .btn-outline-secondary.disabled,
+      .btn-outline-secondary:disabled {
+        color: #6c757d;
+        background-color: transparent;
+      }
+      .btn-outline-secondary:not(:disabled):not(.disabled).active,
+      .btn-outline-secondary:not(:disabled):not(.disabled):active,
+      .show > .btn-outline-secondary.dropdown-toggle {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+      .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+      .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+      .show > .btn-outline-secondary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+      }
+    .reduce-padding{
+        margin: -5px;
+        }
+        .reduce-padding > .col-lg-4 {
+        padding-right: 10px;
+        padding-left: 5px;
+        }
+@media (max-width: 768px) {
+    .form-data{
+        margin-bottom: 14px;
+    }
+    .form-input {
+        width: 100% !important;
+    }
+} 
+.select2-container .select2-selection--single {height: 44px;}
+      .select2-container--default .select2-selection--single {border: 1px solid #DADCE0;}
+      .select2-container + .input-label {width: auto; top: -10px;}
+      .select2-container--default .select2-selection--single .select2-selection__arrow {top: 8px; right: 7px;}
+      .select2-container--default .select2-selection--single .select2-selection__rendered {line-height: 44px;}
+      .select2-container .select2-selection--single .select2-selection__rendered {padding-left: 14px;}
+      .select2-container--default .select2-search--dropdown .select2-search__field{outline: 0;}
+      .select2-container--default .select2-search--dropdown .select2-search__field {border: 1px solid #DADCE0; padding: 8px 15px; border-radius: 4px;}
+      .select2-dropdown {border: 1px solid #DADCE0; padding: 10px;} 
+      .select2-container + .input-label{font-size: 13px;}
+.errorclass{
+    display: none;
+    color: red;
+}       
+.hide{
+    display: none;
+}
+ul.list_item{padding-left: 20px;}
+ul.list_item li{list-style-type: disclosure-closed;}
+table td{position: relative;}
+.info-item{display: inline; vertical-align: middle; cursor: pointer;}
+      .info-item:hover + .tooltip-box, .tooltip-box:hover {display: block;}
+      .tooltip-box {
+        position: absolute; background: #fff; z-index: 3; padding: 15px; font-size: 12px; text-align: left; box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 18%); border-radius: 8px; right: -10px; display: none; bottom: 40px; color: #434343; line-height: 16px; left: 0; right: 0; margin-left: auto; margin-right: auto; width: fit-content;
+    }

@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AlterNomineeAllocationPercentage extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        DB::statement("ALTER TABLE `investor_nominee_details` CHANGE `nominee_allocation_percentage` `nominee_allocation_percentage` int(11) NULL COMMENT 'Nominee allocation percentage share' AFTER `nominee_relation`;");
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        //
+    }
+}
